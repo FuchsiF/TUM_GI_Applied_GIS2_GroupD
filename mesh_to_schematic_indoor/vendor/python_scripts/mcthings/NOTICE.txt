@@ -1,0 +1,7 @@
+edited Vox2Schematic.py by adding sys.path.append('..')
+
+edited vox.py to make it up to date with github version -edited things so it uses more blocks for more colors
+
+edited blocks_memory.py to make it up to date with github version. Changed return self.to_nbt(init_pos, end_pos, self) to return self.to_nbt(init_pos, end_pos) since self is first argument. Made it use build_schematic_nbt from utils.py
+
+Added possibility for adding original origin init y coordinate to schematic file name to be parsed

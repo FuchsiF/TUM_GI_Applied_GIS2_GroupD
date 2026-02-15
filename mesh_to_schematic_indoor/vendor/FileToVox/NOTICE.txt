@@ -1,0 +1,2 @@
+This program has been edited and recompiled to run as a self-contained 64 bit windows application.
+The edits are changes to the order of 3D coordinate components in the output files, and improvements to the color picking algorithm.

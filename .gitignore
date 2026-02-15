@@ -1,0 +1,19 @@
+# Ignore large point cloud data
+*.ply
+*.ply.ply
+*.las
+*.laz
+
+# Ignore intermediate voxel files
+*.vox
+
+# Ignore final output files
+*.schematic
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore Python cache
+__pycache__/
+*.pyc
