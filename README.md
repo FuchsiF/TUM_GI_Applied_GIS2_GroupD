@@ -73,11 +73,6 @@ python mesh_to_schematic_indoor\vox2schematic.py --i "model.vox" ^
 ### Step 5: Format Conversion
 Use either WorldEdit(in-game) or Amulet Editor(external) to place the ```.Schematic``` into the desired level.
 ---
-##  Sample Data
-For testing purposes, a preprocessed and cleaned point cloud (`cleaned_cloud.ply`) is available.
-* **Download**: You can download the dataset from the [Releases](https://github.com/FuchsiF/TUM_GI_Applied_GIS2_GroupD/releases) page.
-* **Usage**: Place the downloaded `.ply` file into the `mesh_to_schematic_indoor/vendor/FileToVox/` directory before running the conversion scripts.
-
 ## Summary
 1. Preprocess in CloudCompare
 2. Run FileToVox
