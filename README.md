@@ -71,7 +71,7 @@ python mesh_to_schematic_indoor\vox2schematic.py --i "model.vox" ^
 ```
 
 ### Step 5: Format Conversion
-Use either WorldEdit(in-game) or Amulet Editor(external) to place the ```.Schematic``` into the desired level. 
+Use either WorldEdit(in-game) or Amulet Editor(external) to place the ```.Schematic``` into the desired level.
 ---
 ##  Sample Data
 For testing purposes, a preprocessed and cleaned point cloud (`cleaned_cloud.ply`) is available.
