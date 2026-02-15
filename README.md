@@ -66,9 +66,8 @@ Run the ```vox2schematic.py``` conversion script, wich uses our modified diction
 ```
 python mesh_to_schematic_indoor\vox2schematic.py --i "model.vox" --o "level.schematic"
 ```
-
 ### Step 5: Format Conversion
-Use either WorldEdit(in-game) or Amulet Editor(external) to place the ```.Schematic``` into the desired level.
+Use either WorldEdit (in-game) or Amulet Editor (external) to place the Schematic-file intothe desired level.
 
 ## Summary
 1. Preprocess in CloudCompare
