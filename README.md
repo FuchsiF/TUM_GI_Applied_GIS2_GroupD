@@ -19,7 +19,7 @@ To reproduce this workflow, you will need the following software:
 We utilize conda to manage dependencies.
 ### Step 1: Clone the repository:
 ```
-git clone [https://github.com/FuchsiF/TUM_GI_Applied_GIS2_GroupD.git](https://github.com/FuchsiF/TUM_GI_Applied_GIS2_GroupD.git)
+git clone https://github.com/FuchsiF/TUM_GI_Applied_GIS2_GroupD.git
 cd TUM_GI_Applied_GIS2_GroupD
 ```
 ### Step 2: Create the environment:
