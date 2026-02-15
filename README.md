@@ -14,7 +14,7 @@ To reproduce this workflow, you will need the following software:
 2.  **[Minecraft Java Edition](https://www.minecraft.net/)**: Version 1.20.
 3.  **Python 3.x**: To run the conversion script.
 4.  **Minecraft WorldEdit** or **Amulet Editor**: To import the final schematic into the desired World.
----
+
 ## Setup
 We utilize conda to manage dependencies.
 ### Step 1: Clone the repository:
@@ -27,7 +27,7 @@ cd TUM_GI_Applied_GIS2_GroupD
 conda env create -f environment.yml
 conda activate minecraft-pipeline
 ```
----
+
 ## Step-by-Step Workflow
 ### Step 1: Preprocess the Point Cloud in Cloud Compare
 Open the raw dataset in CloudCompare and perform following steps:
@@ -69,7 +69,7 @@ python mesh_to_schematic_indoor\vox2schematic.py --i "model.vox" --o "level.sche
 
 ### Step 5: Format Conversion
 Use either WorldEdit(in-game) or Amulet Editor(external) to place the ```.Schematic``` into the desired level.
----
+
 ## Summary
 1. Preprocess in CloudCompare
 2. Run FileToVox
