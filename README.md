@@ -48,8 +48,8 @@ Open the raw dataset in CloudCompare and perform following steps:
       + Max distance to primitive: 0.05
         
 ### Step 2: Voxelization
-Copy your preprocessed Point cloud into the FileToVox folder: ```\TUM_GI_Applied_GIS2_GroupD\mesh_to_schematic_indoor\vendor\FileToVox```
-Run the ```FileToVox``` tool: 
+Copy your preprocessed Point cloud into the FileToVox folder: ```\TUM_GI_Applied_GIS2_GroupD\mesh_to_schematic_indoor\vendor\FileToVox``` 
+and run the ```FileToVox``` tool: 
    + ```--scale 1,9```: Maps 1 meter to ~1.9 blocks to increase the resolution of the reconstruction.
    + ```color-limit 20```: Snaps colors to dominant hues to reduce noise.
 ```
