@@ -48,12 +48,12 @@ Open the raw dataset in CloudCompare and perform following steps:
       + Max distance to primitive: 0.05
         
 ### Step 2: Voxelization
-Copy your preprocessed Point cloud into the FileToVox folder: ```'\TUM_GI_Applied_GIS2_GroupD\mesh_to_schematic_indoor\vendor\FileToVox'``` 
+Copy your preprocessed Point cloud into the parent folder:
 and run the ```FileToVox``` tool: 
    + ```--scale 1,9```: Maps 1 meter to ~1.9 blocks to increase the resolution of the reconstruction.
    + ```color-limit 20```: Snaps colors to dominant hues to reduce noise.
 ```
-.\mesh_to_schematic_indoor\vendor\FileToVox\FileToVox.exe --i "cleaned_cloud.ply" --o "model.vox" --scale 1,9 --color-limit 20
+.\mesh_to_schematic_indoor\vendor\FileToVox\FileToVox.exe -i "cleaned_cloud.ply" -o "model.vox" -p .\mesh_to_schematic_indoor\vendor\FileToVox\minecraft_palette.png --scale 1,9 --color-limit 20
 ```
 ### Step 3: Open the .vox file in Magica Voxel
 1. Open ```model.vox``` using the included MagicaVoxel executable.
@@ -64,7 +64,7 @@ and run the ```FileToVox``` tool:
 ### Step 4: Format Conversion
 Run the ```vox2schematic.py``` conversion script, wich uses our modified dictionary in its ```vox.py``` dependency:
 ```
-python mesh_to_schematic_indoor\vox2schematic.py --i "model.vox" --o "level.schematic"
+python mesh_to_schematic_indoor\vendor\python_scripts\bin\_vox2schematic.py model.vox -o level.schematic
 ```
 ### Step 5: Format Conversion
 Use either WorldEdit (in-game) or Amulet Editor (external) to place the Schematic-file intothe desired level.
