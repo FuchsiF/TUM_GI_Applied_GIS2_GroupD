@@ -52,10 +52,7 @@ Run the ```FileToVox``` tool from the vendor folder:
    + ```--scale 1,9```: Maps 1 meter to ~1.9 blocks to increase the resolution of the reconstruction.
    + ```color-limit 20```: Snaps colors to dominant hues to reduce noise.
 ```
-.\mesh_to_schematic_indoor\vendor\FileToVox\FileToVox.exe --i "cleaned_cloud.ply" ^
-                                                           --o "model.vox" ^
-                                                           --scale 1,9 ^
-                                                           --color-limit 20
+.\mesh_to_schematic_indoor\vendor\FileToVox\FileToVox.exe --i "cleaned_cloud.ply" --o "model.vox" --scale 1,9 --color-limit 20
 ```
 ### Step 3: Open the .vox file in Magica Voxel
 1. Open ```model.vox``` using the included MagicaVoxel executable.
@@ -66,8 +63,7 @@ Run the ```FileToVox``` tool from the vendor folder:
 ### Step 4: Format Conversion
 Run the ```vox2schematic.py``` conversion script, wich uses our modified dictionary in its ```vox.py``` dependency:
 ```
-python mesh_to_schematic_indoor\vox2schematic.py --i "model.vox" ^
-                                                 --o "level.schematic"
+python mesh_to_schematic_indoor\vox2schematic.py --i "model.vox" --o "level.schematic"
 ```
 
 ### Step 5: Format Conversion
